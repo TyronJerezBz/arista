@@ -1,0 +1,25 @@
+# Arista Switch Management Platform - Apache Configuration
+
+# Enable rewrite engine
+RewriteEngine On
+
+# Set base directory
+RewriteBase /arista/
+
+# Handle root directory - serve frontend/index.html
+# Check if the request URI matches root (with RewriteBase, this is relative)
+RewriteCond %{REQUEST_URI} ^/arista/?$
+RewriteRule ^$ frontend/index.html [L]
+
+# Allow access to API files
+RewriteRule ^api/ - [L]
+
+# Allow access to frontend files
+RewriteRule ^frontend/ - [L]
+
+# Allow access to CSS, JS, and other static files
+RewriteRule ^(.*\.(css|js|png|jpg|gif|ico|svg|woff|woff2|ttf|eot))$ - [L]
+
+# Set DirectoryIndex as fallback
+DirectoryIndex frontend/index.html
+

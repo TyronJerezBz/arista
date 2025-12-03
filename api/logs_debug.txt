@@ -1,0 +1,1129 @@
+Raw logs output:
+NULL
+
+Raw logs output:
+NULL
+
+Raw logs output:
+NULL
+
+Raw logs output:
+'Syslog logging: enabled
+    Buffer logging: level debugging
+    Console logging: level errors
+    Persistent logging: disabled
+    Monitor logging: level errors
+    Synchronous logging: disabled
+    Trap logging: level informational
+    Sequence numbers: disabled
+    Syslog facility: local4
+    Hostname format: Hostname only
+    Repeat logging interval: disabled
+    Repeat messages: disabled
+
+Facility                   Severity            Effective Severity
+--------------------       -------------       ------------------
+aaa                        debugging           debugging    
+accounting                 debugging           debugging    
+acl                        debugging           debugging    
+agent                      debugging           debugging    
+ale                        debugging           debugging    
+arp                        debugging           debugging    
+bfd                        debugging           debugging    
+bgp                        debugging           debugging    
+bmp                        debugging           debugging    
+capacity                   debugging           debugging    
+capi                       debugging           debugging    
+card                       debugging           debugging    
+clear                      debugging           debugging    
+cvx                        debugging           debugging    
+dataplane                  debugging           debugging    
+dhcp                       debugging           debugging    
+dot1x                      debugging           debugging    
+dscp                       debugging           debugging    
+envmon                     debugging           debugging    
+eth                        debugging           debugging    
+eventmon                   debugging           debugging    
+extension                  debugging           debugging    
+fhrp                       debugging           debugging    
+flow                       debugging           debugging    
+forwarding                 debugging           debugging    
+fru                        debugging           debugging    
+fwk                        debugging           debugging    
+gmp                        debugging           debugging    
+hardware                   debugging           debugging    
+health                     debugging           debugging    
+httpservice                debugging           debugging    
+igmp                       debugging           debugging    
+igmpsnooping               debugging           debugging    
+int                        debugging           debugging    
+intf                       debugging           debugging    
+ip6routing                 debugging           debugging    
+iprib                      debugging           debugging    
+ira                        debugging           debugging    
+isis                       debugging           debugging    
+kernelfib                  debugging           debugging    
+lacp                       debugging           debugging    
+lag                        debugging           debugging    
+launcher                   debugging           debugging    
+ldp                        debugging           debugging    
+license                    debugging           debugging    
+lineproto                  debugging           debugging    
+lldp                       debugging           debugging    
+loadbalancer               debugging           debugging    
+logmgr                     debugging           debugging    
+loopback                   debugging           debugging    
+loopprotect                debugging           debugging    
+mapreducemonitor           debugging           debugging    
+max24305                   debugging           debugging    
+mcs                        debugging           debugging    
+mirroring                  debugging           debugging    
+mka                        debugging           debugging    
+mlag                       debugging           debugging    
+mldsnooping                debugging           debugging    
+mmode                      debugging           debugging    
+mroute                     debugging           debugging    
+mrp                        debugging           debugging    
+msdp                       debugging           debugging    
+msrp                       debugging           debugging    
+msspolicymonitor           debugging           debugging    
+mvrp                       debugging           debugging    
+nat                        debugging           debugging    
+openconfig                 debugging           debugging    
+openflow                   debugging           debugging    
+ospf                       debugging           debugging    
+ospf3                      debugging           debugging    
+package                    debugging           debugging    
+pfc                        debugging           debugging    
+pimbsr                     debugging           debugging    
+portsecurity               debugging           debugging    
+ptp                        debugging           debugging    
+pwrmgmt                    debugging           debugging    
+qos                        debugging           debugging    
+quartzy                    debugging           debugging    
+queuemonitor               debugging           debugging    
+radius                     debugging           debugging    
+redundancy                 debugging           debugging    
+rib                        debugging           debugging    
+routing                    debugging           debugging    
+sand                       debugging           debugging    
+sandacl                    debugging           debugging    
+sandhalo                   debugging           debugging    
+sandipsec                  debugging           debugging    
+sandtopo                   debugging           debugging    
+security                   debugging           debugging    
+servermonitor              debugging           debugging    
+spantree                   debugging           debugging    
+sso                        debugging           debugging    
+stagemgr                   debugging           debugging    
+sys                        debugging           debugging    
+sysdb                      debugging           debugging    
+tapagg                     debugging           debugging    
+tcp                        debugging           debugging    
+transceiver                debugging           debugging    
+tunnel                     debugging           debugging    
+tunnelintf                 debugging           debugging    
+vmtracersess               debugging           debugging    
+vmwarevi                   debugging           debugging    
+vmwarevs                   debugging           debugging    
+vrf                        debugging           debugging    
+vrrp                       debugging           debugging    
+vxlan                      debugging           debugging    
+xmpp                       debugging           debugging    
+ztp                        debugging           debugging    
+
+Log Buffer:
+Nov 10 15:35:24 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_E: Enter configuration mode from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:35:24 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_I: Configured from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:35:24 BHP-Arista-Core1 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet1, changed state to down
+Nov 10 15:35:24 BHP-Arista-Core1 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Nov 10 15:35:24 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_DEL: Interface Ethernet1 has been removed from instance MST0
+Nov 10 15:35:27 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_E: Enter configuration mode from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:35:27 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_I: Configured from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:35:29 BHP-Arista-Core1 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 7446.a05b.6440 and portId "49" added on interface Ethernet1
+Nov 10 15:35:30 BHP-Arista-Core1 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet1, changed state to up
+Nov 10 15:35:30 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet1 has been added to instance MST0
+Nov 10 15:35:30 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_E: Enter configuration mode from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:35:30 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_I: Configured from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:35:50 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet1 instance MST0 moving from discarding to learning
+Nov 10 15:35:50 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet1 instance MST0 moving from learning to forwarding
+Nov 10 15:36:20 BHP-Arista-Core1 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Nov 10 15:47:25 BHP-Arista-Core1 IgmpSnooping: %IGMPSNOOPING-6-NO_IGMP_QUERIER: No IGMP querier detected in VLAN 50. IGMP report received from 10.10.50.61 on Ethernet1 for 239.255.102.18
+Nov 10 15:50:37 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_E: Enter configuration mode from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:50:38 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_I: Configured from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:50:38 BHP-Arista-Core1 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet1, changed state to down
+Nov 10 15:50:38 BHP-Arista-Core1 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Nov 10 15:50:38 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_DEL: Interface Ethernet1 has been removed from instance MST0
+Nov 10 15:50:42 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_STARTUP: Startup config saved from system:/running-config by arista_eapi on command-api (10.10.50.149).
+Nov 10 15:50:51 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_E: Enter configuration mode from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:50:51 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_I: Configured from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:50:53 BHP-Arista-Core1 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 7446.a05b.6440 and portId "49" added on interface Ethernet1
+Nov 10 15:50:54 BHP-Arista-Core1 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet1, changed state to up
+Nov 10 15:50:54 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet1 has been added to instance MST0
+Nov 10 15:51:14 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet1 instance MST0 moving from discarding to learning
+Nov 10 15:51:14 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet1 instance MST0 moving from learning to forwarding
+Nov 10 15:51:44 BHP-Arista-Core1 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Nov 10 15:51:57 BHP-Arista-Core1 Fru: %FRU-6-TRANSCEIVER_REMOVED: The transceiver for interface Ethernet49 has been removed
+Nov 10 17:24:42 BHP-Arista-Core1 IgmpSnooping: %IGMPSNOOPING-6-NO_IGMP_QUERIER: No IGMP querier detected in VLAN 50. IGMP report received from 10.10.50.61 on Ethernet1 for 239.255.102.18
+'
+
+Raw logs output:
+'Syslog logging: enabled
+    Buffer logging: level debugging
+    Console logging: level errors
+    Persistent logging: disabled
+    Monitor logging: level errors
+    Synchronous logging: disabled
+    Trap logging: level informational
+    Sequence numbers: disabled
+    Syslog facility: local4
+    Hostname format: Hostname only
+    Repeat logging interval: disabled
+    Repeat messages: disabled
+
+Facility                   Severity            Effective Severity
+--------------------       -------------       ------------------
+aaa                        debugging           debugging    
+accounting                 debugging           debugging    
+acl                        debugging           debugging    
+agent                      debugging           debugging    
+ale                        debugging           debugging    
+arp                        debugging           debugging    
+bfd                        debugging           debugging    
+bgp                        debugging           debugging    
+bmp                        debugging           debugging    
+capacity                   debugging           debugging    
+capi                       debugging           debugging    
+card                       debugging           debugging    
+clear                      debugging           debugging    
+cvx                        debugging           debugging    
+dataplane                  debugging           debugging    
+dhcp                       debugging           debugging    
+dot1x                      debugging           debugging    
+dscp                       debugging           debugging    
+envmon                     debugging           debugging    
+eth                        debugging           debugging    
+eventmon                   debugging           debugging    
+extension                  debugging           debugging    
+fhrp                       debugging           debugging    
+flow                       debugging           debugging    
+forwarding                 debugging           debugging    
+fru                        debugging           debugging    
+fwk                        debugging           debugging    
+gmp                        debugging           debugging    
+hardware                   debugging           debugging    
+health                     debugging           debugging    
+httpservice                debugging           debugging    
+igmp                       debugging           debugging    
+igmpsnooping               debugging           debugging    
+int                        debugging           debugging    
+intf                       debugging           debugging    
+ip6routing                 debugging           debugging    
+iprib                      debugging           debugging    
+ira                        debugging           debugging    
+isis                       debugging           debugging    
+kernelfib                  debugging           debugging    
+lacp                       debugging           debugging    
+lag                        debugging           debugging    
+launcher                   debugging           debugging    
+ldp                        debugging           debugging    
+license                    debugging           debugging    
+lineproto                  debugging           debugging    
+lldp                       debugging           debugging    
+loadbalancer               debugging           debugging    
+logmgr                     debugging           debugging    
+loopback                   debugging           debugging    
+loopprotect                debugging           debugging    
+mapreducemonitor           debugging           debugging    
+max24305                   debugging           debugging    
+mcs                        debugging           debugging    
+mirroring                  debugging           debugging    
+mka                        debugging           debugging    
+mlag                       debugging           debugging    
+mldsnooping                debugging           debugging    
+mmode                      debugging           debugging    
+mroute                     debugging           debugging    
+mrp                        debugging           debugging    
+msdp                       debugging           debugging    
+msrp                       debugging           debugging    
+msspolicymonitor           debugging           debugging    
+mvrp                       debugging           debugging    
+nat                        debugging           debugging    
+openconfig                 debugging           debugging    
+openflow                   debugging           debugging    
+ospf                       debugging           debugging    
+ospf3                      debugging           debugging    
+package                    debugging           debugging    
+pfc                        debugging           debugging    
+pimbsr                     debugging           debugging    
+portsecurity               debugging           debugging    
+ptp                        debugging           debugging    
+pwrmgmt                    debugging           debugging    
+qos                        debugging           debugging    
+quartzy                    debugging           debugging    
+queuemonitor               debugging           debugging    
+radius                     debugging           debugging    
+redundancy                 debugging           debugging    
+rib                        debugging           debugging    
+routing                    debugging           debugging    
+sand                       debugging           debugging    
+sandacl                    debugging           debugging    
+sandhalo                   debugging           debugging    
+sandipsec                  debugging           debugging    
+sandtopo                   debugging           debugging    
+security                   debugging           debugging    
+servermonitor              debugging           debugging    
+spantree                   debugging           debugging    
+sso                        debugging           debugging    
+stagemgr                   debugging           debugging    
+sys                        debugging           debugging    
+sysdb                      debugging           debugging    
+tapagg                     debugging           debugging    
+tcp                        debugging           debugging    
+transceiver                debugging           debugging    
+tunnel                     debugging           debugging    
+tunnelintf                 debugging           debugging    
+vmtracersess               debugging           debugging    
+vmwarevi                   debugging           debugging    
+vmwarevs                   debugging           debugging    
+vrf                        debugging           debugging    
+vrrp                       debugging           debugging    
+vxlan                      debugging           debugging    
+xmpp                       debugging           debugging    
+ztp                        debugging           debugging    
+
+Log Buffer:
+Nov 10 15:35:24 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_E: Enter configuration mode from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:35:24 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_I: Configured from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:35:24 BHP-Arista-Core1 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet1, changed state to down
+Nov 10 15:35:24 BHP-Arista-Core1 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Nov 10 15:35:24 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_DEL: Interface Ethernet1 has been removed from instance MST0
+Nov 10 15:35:27 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_E: Enter configuration mode from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:35:27 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_I: Configured from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:35:29 BHP-Arista-Core1 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 7446.a05b.6440 and portId "49" added on interface Ethernet1
+Nov 10 15:35:30 BHP-Arista-Core1 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet1, changed state to up
+Nov 10 15:35:30 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet1 has been added to instance MST0
+Nov 10 15:35:30 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_E: Enter configuration mode from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:35:30 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_I: Configured from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:35:50 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet1 instance MST0 moving from discarding to learning
+Nov 10 15:35:50 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet1 instance MST0 moving from learning to forwarding
+Nov 10 15:36:20 BHP-Arista-Core1 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Nov 10 15:47:25 BHP-Arista-Core1 IgmpSnooping: %IGMPSNOOPING-6-NO_IGMP_QUERIER: No IGMP querier detected in VLAN 50. IGMP report received from 10.10.50.61 on Ethernet1 for 239.255.102.18
+Nov 10 15:50:37 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_E: Enter configuration mode from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:50:38 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_I: Configured from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:50:38 BHP-Arista-Core1 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet1, changed state to down
+Nov 10 15:50:38 BHP-Arista-Core1 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Nov 10 15:50:38 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_DEL: Interface Ethernet1 has been removed from instance MST0
+Nov 10 15:50:42 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_STARTUP: Startup config saved from system:/running-config by arista_eapi on command-api (10.10.50.149).
+Nov 10 15:50:51 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_E: Enter configuration mode from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:50:51 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_I: Configured from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:50:53 BHP-Arista-Core1 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 7446.a05b.6440 and portId "49" added on interface Ethernet1
+Nov 10 15:50:54 BHP-Arista-Core1 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet1, changed state to up
+Nov 10 15:50:54 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet1 has been added to instance MST0
+Nov 10 15:51:14 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet1 instance MST0 moving from discarding to learning
+Nov 10 15:51:14 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet1 instance MST0 moving from learning to forwarding
+Nov 10 15:51:44 BHP-Arista-Core1 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Nov 10 15:51:57 BHP-Arista-Core1 Fru: %FRU-6-TRANSCEIVER_REMOVED: The transceiver for interface Ethernet49 has been removed
+Nov 10 17:24:42 BHP-Arista-Core1 IgmpSnooping: %IGMPSNOOPING-6-NO_IGMP_QUERIER: No IGMP querier detected in VLAN 50. IGMP report received from 10.10.50.61 on Ethernet1 for 239.255.102.18
+'
+
+Raw logs output:
+'Syslog logging: enabled
+    Buffer logging: level debugging
+    Console logging: level errors
+    Persistent logging: disabled
+    Monitor logging: level errors
+    Synchronous logging: disabled
+    Trap logging: level informational
+    Sequence numbers: disabled
+    Syslog facility: local4
+    Hostname format: Hostname only
+    Repeat logging interval: disabled
+    Repeat messages: disabled
+
+Facility                   Severity            Effective Severity
+--------------------       -------------       ------------------
+aaa                        debugging           debugging    
+accounting                 debugging           debugging    
+acl                        debugging           debugging    
+agent                      debugging           debugging    
+ale                        debugging           debugging    
+arp                        debugging           debugging    
+bfd                        debugging           debugging    
+bgp                        debugging           debugging    
+bmp                        debugging           debugging    
+capacity                   debugging           debugging    
+capi                       debugging           debugging    
+card                       debugging           debugging    
+clear                      debugging           debugging    
+cvx                        debugging           debugging    
+dataplane                  debugging           debugging    
+dhcp                       debugging           debugging    
+dot1x                      debugging           debugging    
+dscp                       debugging           debugging    
+envmon                     debugging           debugging    
+eth                        debugging           debugging    
+eventmon                   debugging           debugging    
+extension                  debugging           debugging    
+fhrp                       debugging           debugging    
+flow                       debugging           debugging    
+forwarding                 debugging           debugging    
+fru                        debugging           debugging    
+fwk                        debugging           debugging    
+gmp                        debugging           debugging    
+hardware                   debugging           debugging    
+health                     debugging           debugging    
+httpservice                debugging           debugging    
+igmp                       debugging           debugging    
+igmpsnooping               debugging           debugging    
+int                        debugging           debugging    
+intf                       debugging           debugging    
+ip6routing                 debugging           debugging    
+iprib                      debugging           debugging    
+ira                        debugging           debugging    
+isis                       debugging           debugging    
+kernelfib                  debugging           debugging    
+lacp                       debugging           debugging    
+lag                        debugging           debugging    
+launcher                   debugging           debugging    
+ldp                        debugging           debugging    
+license                    debugging           debugging    
+lineproto                  debugging           debugging    
+lldp                       debugging           debugging    
+loadbalancer               debugging           debugging    
+logmgr                     debugging           debugging    
+loopback                   debugging           debugging    
+loopprotect                debugging           debugging    
+mapreducemonitor           debugging           debugging    
+max24305                   debugging           debugging    
+mcs                        debugging           debugging    
+mirroring                  debugging           debugging    
+mka                        debugging           debugging    
+mlag                       debugging           debugging    
+mldsnooping                debugging           debugging    
+mmode                      debugging           debugging    
+mroute                     debugging           debugging    
+mrp                        debugging           debugging    
+msdp                       debugging           debugging    
+msrp                       debugging           debugging    
+msspolicymonitor           debugging           debugging    
+mvrp                       debugging           debugging    
+nat                        debugging           debugging    
+openconfig                 debugging           debugging    
+openflow                   debugging           debugging    
+ospf                       debugging           debugging    
+ospf3                      debugging           debugging    
+package                    debugging           debugging    
+pfc                        debugging           debugging    
+pimbsr                     debugging           debugging    
+portsecurity               debugging           debugging    
+ptp                        debugging           debugging    
+pwrmgmt                    debugging           debugging    
+qos                        debugging           debugging    
+quartzy                    debugging           debugging    
+queuemonitor               debugging           debugging    
+radius                     debugging           debugging    
+redundancy                 debugging           debugging    
+rib                        debugging           debugging    
+routing                    debugging           debugging    
+sand                       debugging           debugging    
+sandacl                    debugging           debugging    
+sandhalo                   debugging           debugging    
+sandipsec                  debugging           debugging    
+sandtopo                   debugging           debugging    
+security                   debugging           debugging    
+servermonitor              debugging           debugging    
+spantree                   debugging           debugging    
+sso                        debugging           debugging    
+stagemgr                   debugging           debugging    
+sys                        debugging           debugging    
+sysdb                      debugging           debugging    
+tapagg                     debugging           debugging    
+tcp                        debugging           debugging    
+transceiver                debugging           debugging    
+tunnel                     debugging           debugging    
+tunnelintf                 debugging           debugging    
+vmtracersess               debugging           debugging    
+vmwarevi                   debugging           debugging    
+vmwarevs                   debugging           debugging    
+vrf                        debugging           debugging    
+vrrp                       debugging           debugging    
+vxlan                      debugging           debugging    
+xmpp                       debugging           debugging    
+ztp                        debugging           debugging    
+
+Log Buffer:
+Nov 10 15:35:24 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_E: Enter configuration mode from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:35:24 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_I: Configured from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:35:24 BHP-Arista-Core1 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet1, changed state to down
+Nov 10 15:35:24 BHP-Arista-Core1 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Nov 10 15:35:24 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_DEL: Interface Ethernet1 has been removed from instance MST0
+Nov 10 15:35:27 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_E: Enter configuration mode from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:35:27 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_I: Configured from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:35:29 BHP-Arista-Core1 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 7446.a05b.6440 and portId "49" added on interface Ethernet1
+Nov 10 15:35:30 BHP-Arista-Core1 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet1, changed state to up
+Nov 10 15:35:30 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet1 has been added to instance MST0
+Nov 10 15:35:30 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_E: Enter configuration mode from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:35:30 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_I: Configured from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:35:50 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet1 instance MST0 moving from discarding to learning
+Nov 10 15:35:50 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet1 instance MST0 moving from learning to forwarding
+Nov 10 15:36:20 BHP-Arista-Core1 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Nov 10 15:47:25 BHP-Arista-Core1 IgmpSnooping: %IGMPSNOOPING-6-NO_IGMP_QUERIER: No IGMP querier detected in VLAN 50. IGMP report received from 10.10.50.61 on Ethernet1 for 239.255.102.18
+Nov 10 15:50:37 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_E: Enter configuration mode from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:50:38 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_I: Configured from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:50:38 BHP-Arista-Core1 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet1, changed state to down
+Nov 10 15:50:38 BHP-Arista-Core1 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Nov 10 15:50:38 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_DEL: Interface Ethernet1 has been removed from instance MST0
+Nov 10 15:50:42 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_STARTUP: Startup config saved from system:/running-config by arista_eapi on command-api (10.10.50.149).
+Nov 10 15:50:51 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_E: Enter configuration mode from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:50:51 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_I: Configured from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:50:53 BHP-Arista-Core1 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 7446.a05b.6440 and portId "49" added on interface Ethernet1
+Nov 10 15:50:54 BHP-Arista-Core1 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet1, changed state to up
+Nov 10 15:50:54 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet1 has been added to instance MST0
+Nov 10 15:51:14 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet1 instance MST0 moving from discarding to learning
+Nov 10 15:51:14 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet1 instance MST0 moving from learning to forwarding
+Nov 10 15:51:44 BHP-Arista-Core1 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Nov 10 15:51:57 BHP-Arista-Core1 Fru: %FRU-6-TRANSCEIVER_REMOVED: The transceiver for interface Ethernet49 has been removed
+Nov 10 17:24:42 BHP-Arista-Core1 IgmpSnooping: %IGMPSNOOPING-6-NO_IGMP_QUERIER: No IGMP querier detected in VLAN 50. IGMP report received from 10.10.50.61 on Ethernet1 for 239.255.102.18
+'
+
+Raw logs output:
+'Syslog logging: enabled
+    Buffer logging: level debugging
+    Console logging: level errors
+    Persistent logging: disabled
+    Monitor logging: level errors
+    Synchronous logging: disabled
+    Trap logging: level informational
+    Sequence numbers: disabled
+    Syslog facility: local4
+    Hostname format: Hostname only
+    Repeat logging interval: disabled
+    Repeat messages: disabled
+
+Facility                   Severity            Effective Severity
+--------------------       -------------       ------------------
+aaa                        debugging           debugging    
+accounting                 debugging           debugging    
+acl                        debugging           debugging    
+agent                      debugging           debugging    
+ale                        debugging           debugging    
+arp                        debugging           debugging    
+bfd                        debugging           debugging    
+bgp                        debugging           debugging    
+bmp                        debugging           debugging    
+capacity                   debugging           debugging    
+capi                       debugging           debugging    
+card                       debugging           debugging    
+clear                      debugging           debugging    
+cvx                        debugging           debugging    
+dataplane                  debugging           debugging    
+dhcp                       debugging           debugging    
+dot1x                      debugging           debugging    
+dscp                       debugging           debugging    
+envmon                     debugging           debugging    
+eth                        debugging           debugging    
+eventmon                   debugging           debugging    
+extension                  debugging           debugging    
+fhrp                       debugging           debugging    
+flow                       debugging           debugging    
+forwarding                 debugging           debugging    
+fru                        debugging           debugging    
+fwk                        debugging           debugging    
+gmp                        debugging           debugging    
+hardware                   debugging           debugging    
+health                     debugging           debugging    
+httpservice                debugging           debugging    
+igmp                       debugging           debugging    
+igmpsnooping               debugging           debugging    
+int                        debugging           debugging    
+intf                       debugging           debugging    
+ip6routing                 debugging           debugging    
+iprib                      debugging           debugging    
+ira                        debugging           debugging    
+isis                       debugging           debugging    
+kernelfib                  debugging           debugging    
+lacp                       debugging           debugging    
+lag                        debugging           debugging    
+launcher                   debugging           debugging    
+ldp                        debugging           debugging    
+license                    debugging           debugging    
+lineproto                  debugging           debugging    
+lldp                       debugging           debugging    
+loadbalancer               debugging           debugging    
+logmgr                     debugging           debugging    
+loopback                   debugging           debugging    
+loopprotect                debugging           debugging    
+mapreducemonitor           debugging           debugging    
+max24305                   debugging           debugging    
+mcs                        debugging           debugging    
+mirroring                  debugging           debugging    
+mka                        debugging           debugging    
+mlag                       debugging           debugging    
+mldsnooping                debugging           debugging    
+mmode                      debugging           debugging    
+mroute                     debugging           debugging    
+mrp                        debugging           debugging    
+msdp                       debugging           debugging    
+msrp                       debugging           debugging    
+msspolicymonitor           debugging           debugging    
+mvrp                       debugging           debugging    
+nat                        debugging           debugging    
+openconfig                 debugging           debugging    
+openflow                   debugging           debugging    
+ospf                       debugging           debugging    
+ospf3                      debugging           debugging    
+package                    debugging           debugging    
+pfc                        debugging           debugging    
+pimbsr                     debugging           debugging    
+portsecurity               debugging           debugging    
+ptp                        debugging           debugging    
+pwrmgmt                    debugging           debugging    
+qos                        debugging           debugging    
+quartzy                    debugging           debugging    
+queuemonitor               debugging           debugging    
+radius                     debugging           debugging    
+redundancy                 debugging           debugging    
+rib                        debugging           debugging    
+routing                    debugging           debugging    
+sand                       debugging           debugging    
+sandacl                    debugging           debugging    
+sandhalo                   debugging           debugging    
+sandipsec                  debugging           debugging    
+sandtopo                   debugging           debugging    
+security                   debugging           debugging    
+servermonitor              debugging           debugging    
+spantree                   debugging           debugging    
+sso                        debugging           debugging    
+stagemgr                   debugging           debugging    
+sys                        debugging           debugging    
+sysdb                      debugging           debugging    
+tapagg                     debugging           debugging    
+tcp                        debugging           debugging    
+transceiver                debugging           debugging    
+tunnel                     debugging           debugging    
+tunnelintf                 debugging           debugging    
+vmtracersess               debugging           debugging    
+vmwarevi                   debugging           debugging    
+vmwarevs                   debugging           debugging    
+vrf                        debugging           debugging    
+vrrp                       debugging           debugging    
+vxlan                      debugging           debugging    
+xmpp                       debugging           debugging    
+ztp                        debugging           debugging    
+
+Log Buffer:
+Nov 10 15:35:24 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_E: Enter configuration mode from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:35:24 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_I: Configured from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:35:24 BHP-Arista-Core1 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet1, changed state to down
+Nov 10 15:35:24 BHP-Arista-Core1 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Nov 10 15:35:24 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_DEL: Interface Ethernet1 has been removed from instance MST0
+Nov 10 15:35:27 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_E: Enter configuration mode from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:35:27 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_I: Configured from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:35:29 BHP-Arista-Core1 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 7446.a05b.6440 and portId "49" added on interface Ethernet1
+Nov 10 15:35:30 BHP-Arista-Core1 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet1, changed state to up
+Nov 10 15:35:30 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet1 has been added to instance MST0
+Nov 10 15:35:30 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_E: Enter configuration mode from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:35:30 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_I: Configured from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:35:50 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet1 instance MST0 moving from discarding to learning
+Nov 10 15:35:50 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet1 instance MST0 moving from learning to forwarding
+Nov 10 15:36:20 BHP-Arista-Core1 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Nov 10 15:47:25 BHP-Arista-Core1 IgmpSnooping: %IGMPSNOOPING-6-NO_IGMP_QUERIER: No IGMP querier detected in VLAN 50. IGMP report received from 10.10.50.61 on Ethernet1 for 239.255.102.18
+Nov 10 15:50:37 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_E: Enter configuration mode from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:50:38 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_I: Configured from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:50:38 BHP-Arista-Core1 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet1, changed state to down
+Nov 10 15:50:38 BHP-Arista-Core1 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Nov 10 15:50:38 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_DEL: Interface Ethernet1 has been removed from instance MST0
+Nov 10 15:50:42 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_STARTUP: Startup config saved from system:/running-config by arista_eapi on command-api (10.10.50.149).
+Nov 10 15:50:51 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_E: Enter configuration mode from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:50:51 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_I: Configured from console by arista_eapi on command-api (10.10.50.149)
+Nov 10 15:50:53 BHP-Arista-Core1 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 7446.a05b.6440 and portId "49" added on interface Ethernet1
+Nov 10 15:50:54 BHP-Arista-Core1 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet1, changed state to up
+Nov 10 15:50:54 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet1 has been added to instance MST0
+Nov 10 15:51:14 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet1 instance MST0 moving from discarding to learning
+Nov 10 15:51:14 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet1 instance MST0 moving from learning to forwarding
+Nov 10 15:51:44 BHP-Arista-Core1 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Nov 10 15:51:57 BHP-Arista-Core1 Fru: %FRU-6-TRANSCEIVER_REMOVED: The transceiver for interface Ethernet49 has been removed
+Nov 10 17:24:42 BHP-Arista-Core1 IgmpSnooping: %IGMPSNOOPING-6-NO_IGMP_QUERIER: No IGMP querier detected in VLAN 50. IGMP report received from 10.10.50.61 on Ethernet1 for 239.255.102.18
+'
+
+Raw logs output:
+'Syslog logging: enabled
+    Buffer logging: level debugging
+    Console logging: level errors
+    Persistent logging: disabled
+    Monitor logging: level errors
+    Synchronous logging: disabled
+    Trap logging: level informational
+    Sequence numbers: disabled
+    Syslog facility: local4
+    Hostname format: Hostname only
+    Repeat logging interval: disabled
+    Repeat messages: disabled
+
+Facility                   Severity            Effective Severity
+--------------------       -------------       ------------------
+aaa                        debugging           debugging    
+accounting                 debugging           debugging    
+acl                        debugging           debugging    
+agent                      debugging           debugging    
+ale                        debugging           debugging    
+arp                        debugging           debugging    
+bfd                        debugging           debugging    
+bgp                        debugging           debugging    
+bmp                        debugging           debugging    
+capacity                   debugging           debugging    
+capi                       debugging           debugging    
+card                       debugging           debugging    
+clear                      debugging           debugging    
+cvx                        debugging           debugging    
+dataplane                  debugging           debugging    
+dhcp                       debugging           debugging    
+dot1x                      debugging           debugging    
+dscp                       debugging           debugging    
+envmon                     debugging           debugging    
+eth                        debugging           debugging    
+eventmon                   debugging           debugging    
+extension                  debugging           debugging    
+fhrp                       debugging           debugging    
+flow                       debugging           debugging    
+forwarding                 debugging           debugging    
+fru                        debugging           debugging    
+fwk                        debugging           debugging    
+gmp                        debugging           debugging    
+hardware                   debugging           debugging    
+health                     debugging           debugging    
+httpservice                debugging           debugging    
+igmp                       debugging           debugging    
+igmpsnooping               debugging           debugging    
+int                        debugging           debugging    
+intf                       debugging           debugging    
+ip6routing                 debugging           debugging    
+iprib                      debugging           debugging    
+ira                        debugging           debugging    
+isis                       debugging           debugging    
+kernelfib                  debugging           debugging    
+lacp                       debugging           debugging    
+lag                        debugging           debugging    
+launcher                   debugging           debugging    
+ldp                        debugging           debugging    
+license                    debugging           debugging    
+lineproto                  debugging           debugging    
+lldp                       debugging           debugging    
+loadbalancer               debugging           debugging    
+logmgr                     debugging           debugging    
+loopback                   debugging           debugging    
+loopprotect                debugging           debugging    
+mapreducemonitor           debugging           debugging    
+max24305                   debugging           debugging    
+mcs                        debugging           debugging    
+mirroring                  debugging           debugging    
+mka                        debugging           debugging    
+mlag                       debugging           debugging    
+mldsnooping                debugging           debugging    
+mmode                      debugging           debugging    
+mroute                     debugging           debugging    
+mrp                        debugging           debugging    
+msdp                       debugging           debugging    
+msrp                       debugging           debugging    
+msspolicymonitor           debugging           debugging    
+mvrp                       debugging           debugging    
+nat                        debugging           debugging    
+openconfig                 debugging           debugging    
+openflow                   debugging           debugging    
+ospf                       debugging           debugging    
+ospf3                      debugging           debugging    
+package                    debugging           debugging    
+pfc                        debugging           debugging    
+pimbsr                     debugging           debugging    
+portsecurity               debugging           debugging    
+ptp                        debugging           debugging    
+pwrmgmt                    debugging           debugging    
+qos                        debugging           debugging    
+quartzy                    debugging           debugging    
+queuemonitor               debugging           debugging    
+radius                     debugging           debugging    
+redundancy                 debugging           debugging    
+rib                        debugging           debugging    
+routing                    debugging           debugging    
+sand                       debugging           debugging    
+sandacl                    debugging           debugging    
+sandhalo                   debugging           debugging    
+sandipsec                  debugging           debugging    
+sandtopo                   debugging           debugging    
+security                   debugging           debugging    
+servermonitor              debugging           debugging    
+spantree                   debugging           debugging    
+sso                        debugging           debugging    
+stagemgr                   debugging           debugging    
+sys                        debugging           debugging    
+sysdb                      debugging           debugging    
+tapagg                     debugging           debugging    
+tcp                        debugging           debugging    
+transceiver                debugging           debugging    
+tunnel                     debugging           debugging    
+tunnelintf                 debugging           debugging    
+vmtracersess               debugging           debugging    
+vmwarevi                   debugging           debugging    
+vmwarevs                   debugging           debugging    
+vrf                        debugging           debugging    
+vrrp                       debugging           debugging    
+vxlan                      debugging           debugging    
+xmpp                       debugging           debugging    
+ztp                        debugging           debugging    
+
+Log Buffer:
+Dec  1 23:31:50 BHP-Arista-Core1 SuperServer: %SYS-5-SYSTEM_RESTARTED: System restarted
+Dec  1 23:31:50 BHP-Arista-Core1 SuperServer: %SYS-6-SYSTEM_INFO: Software image version: 4.23.4.3M
+Dec  1 23:31:50 BHP-Arista-Core1 SuperServer: %SYS-6-SYSTEM_INFO: Model: DCS-7280SE-64-R
+Dec  1 23:31:50 BHP-Arista-Core1 SuperServer: %SYS-6-SYSTEM_INFO: Serial number: JPE17142426
+Dec  1 23:42:20 BHP-Arista-Core1 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Management1, changed state to up
+Dec  1 23:42:20 BHP-Arista-Core1 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 7446.a05b.6440 and portId "2" added on interface Management1
+Dec  1 23:42:37 BHP-Arista-Core1 Fru: %FRU-6-TRANSCEIVER_INSERTED: A transceiver for interface Ethernet2 has been inserted. manufacturer: Arista Networks model: SFP-10G-LR part number SFP-10G-LR rev 20 serial number ADP1637001J4
+Dec  1 23:42:51 BHP-Arista-Core1 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 7446.a05b.6440 and portId "49" added on interface Ethernet2
+Dec  1 23:42:54 BHP-Arista-Core1 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet2, changed state to up
+Dec  1 23:42:54 BHP-Arista-Core1 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Dec  1 23:42:54 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet2 has been added to instance MST0
+Dec  1 23:43:14 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet2 instance MST0 moving from discarding to learning
+Dec  1 23:43:14 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet2 instance MST0 moving from learning to forwarding
+Dec  1 23:43:19 BHP-Arista-Core1 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet2, changed state to down
+Dec  1 23:43:19 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_DEL: Interface Ethernet2 has been removed from instance MST0
+Dec  1 23:43:49 BHP-Arista-Core1 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Dec  1 23:44:52 BHP-Arista-Core1 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Management1, changed state to down
+Dec  1 23:45:04 BHP-Arista-Core1 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Management1, changed state to up
+Dec  1 23:45:05 BHP-Arista-Core1 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId a0b3.ccaf.f2c0 and portId "23" added on interface Management1
+Dec  1 23:45:12 BHP-Arista-Core1 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Management1, changed state to down
+Dec  1 23:45:26 BHP-Arista-Core1 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Management1, changed state to up
+Dec  1 23:45:27 BHP-Arista-Core1 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId a0b3.ccaf.f2c0 and portId "23" added on interface Management1
+Dec  1 23:45:32 BHP-Arista-Core1 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Management1, changed state to down
+Dec  1 23:45:36 BHP-Arista-Core1 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Management1, changed state to up
+Dec  1 23:45:38 BHP-Arista-Core1 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId a0b3.ccaf.f2c0 and portId "43" added on interface Management1
+Dec  1 23:47:47 BHP-Arista-Core1 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 7446.a05b.6440 and portId "49" added on interface Ethernet2
+Dec  1 23:47:50 BHP-Arista-Core1 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet2, changed state to up
+Dec  1 23:47:50 BHP-Arista-Core1 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Dec  1 23:47:50 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet2 has been added to instance MST0
+Dec  1 23:48:10 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet2 instance MST0 moving from discarding to learning
+Dec  1 23:48:10 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet2 instance MST0 moving from learning to forwarding
+Dec  1 23:48:40 BHP-Arista-Core1 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+'
+
+Raw logs output:
+'Syslog logging: enabled
+    Buffer logging: level debugging
+    Console logging: level errors
+    Persistent logging: disabled
+    Monitor logging: level errors
+    Synchronous logging: disabled
+    Trap logging: level informational
+    Sequence numbers: disabled
+    Syslog facility: local4
+    Hostname format: Hostname only
+    Repeat logging interval: disabled
+    Repeat messages: disabled
+
+Facility                   Severity            Effective Severity
+--------------------       -------------       ------------------
+aaa                        debugging           debugging    
+accounting                 debugging           debugging    
+acl                        debugging           debugging    
+agent                      debugging           debugging    
+ale                        debugging           debugging    
+arp                        debugging           debugging    
+bfd                        debugging           debugging    
+bgp                        debugging           debugging    
+bmp                        debugging           debugging    
+capacity                   debugging           debugging    
+capi                       debugging           debugging    
+card                       debugging           debugging    
+clear                      debugging           debugging    
+cvx                        debugging           debugging    
+dataplane                  debugging           debugging    
+dhcp                       debugging           debugging    
+dot1x                      debugging           debugging    
+dscp                       debugging           debugging    
+envmon                     debugging           debugging    
+eth                        debugging           debugging    
+eventmon                   debugging           debugging    
+extension                  debugging           debugging    
+fhrp                       debugging           debugging    
+flow                       debugging           debugging    
+forwarding                 debugging           debugging    
+fru                        debugging           debugging    
+fwk                        debugging           debugging    
+gmp                        debugging           debugging    
+hardware                   debugging           debugging    
+health                     debugging           debugging    
+httpservice                debugging           debugging    
+igmp                       debugging           debugging    
+igmpsnooping               debugging           debugging    
+int                        debugging           debugging    
+intf                       debugging           debugging    
+ip6routing                 debugging           debugging    
+iprib                      debugging           debugging    
+ira                        debugging           debugging    
+isis                       debugging           debugging    
+kernelfib                  debugging           debugging    
+lacp                       debugging           debugging    
+lag                        debugging           debugging    
+launcher                   debugging           debugging    
+ldp                        debugging           debugging    
+license                    debugging           debugging    
+lineproto                  debugging           debugging    
+lldp                       debugging           debugging    
+loadbalancer               debugging           debugging    
+logmgr                     debugging           debugging    
+loopback                   debugging           debugging    
+loopprotect                debugging           debugging    
+mapreducemonitor           debugging           debugging    
+max24305                   debugging           debugging    
+mcs                        debugging           debugging    
+mirroring                  debugging           debugging    
+mka                        debugging           debugging    
+mlag                       debugging           debugging    
+mldsnooping                debugging           debugging    
+mmode                      debugging           debugging    
+mroute                     debugging           debugging    
+mrp                        debugging           debugging    
+msdp                       debugging           debugging    
+msrp                       debugging           debugging    
+msspolicymonitor           debugging           debugging    
+mvrp                       debugging           debugging    
+nat                        debugging           debugging    
+openconfig                 debugging           debugging    
+openflow                   debugging           debugging    
+ospf                       debugging           debugging    
+ospf3                      debugging           debugging    
+package                    debugging           debugging    
+pfc                        debugging           debugging    
+pimbsr                     debugging           debugging    
+portsecurity               debugging           debugging    
+ptp                        debugging           debugging    
+pwrmgmt                    debugging           debugging    
+qos                        debugging           debugging    
+quartzy                    debugging           debugging    
+queuemonitor               debugging           debugging    
+radius                     debugging           debugging    
+redundancy                 debugging           debugging    
+rib                        debugging           debugging    
+routing                    debugging           debugging    
+sand                       debugging           debugging    
+sandacl                    debugging           debugging    
+sandhalo                   debugging           debugging    
+sandipsec                  debugging           debugging    
+sandtopo                   debugging           debugging    
+security                   debugging           debugging    
+servermonitor              debugging           debugging    
+spantree                   debugging           debugging    
+sso                        debugging           debugging    
+stagemgr                   debugging           debugging    
+sys                        debugging           debugging    
+sysdb                      debugging           debugging    
+tapagg                     debugging           debugging    
+tcp                        debugging           debugging    
+transceiver                debugging           debugging    
+tunnel                     debugging           debugging    
+tunnelintf                 debugging           debugging    
+vmtracersess               debugging           debugging    
+vmwarevi                   debugging           debugging    
+vmwarevs                   debugging           debugging    
+vrf                        debugging           debugging    
+vrrp                       debugging           debugging    
+vxlan                      debugging           debugging    
+xmpp                       debugging           debugging    
+ztp                        debugging           debugging    
+
+Log Buffer:
+Dec  2 14:58:40 BHP-Arista-Core1 ProcMgr-worker: %PROCMGR-7-WORKER_WARMSTART_DONE: ProcMgr worker warm start done. (PID=2370)
+Dec  2 14:58:40 BHP-Arista-Core1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: \'SandMact\' starting with PID=3789 (PPID=2370) -- execing \'/usr/bin/SandMact\'
+Dec  2 14:58:40 BHP-Arista-Core1 Rib: %RIB-5-IGP_CONVERGED: IGP protocols in VRF default have converged and their routes are in FIB
+Dec  2 14:58:40 BHP-Arista-Core1 Rib: %RIB-5-ROUTE_READY: Routes in VRF default are ready and available in FIB
+Dec  2 14:58:40 BHP-Arista-Core1 ProcMgr-worker: %PROCMGR-6-WORKER_WARMSTART: ProcMgr worker warm start. (PID=2370)
+Dec  2 14:58:41 BHP-Arista-Core1 SandTunnel: %AGENT-6-INITIALIZED: Agent \'SandTunnel\' initialized; pid=3544
+Dec  2 14:58:41 BHP-Arista-Core1 ProcMgr-worker: %PROCMGR-7-NEW_PROCESSES: New processes configured to run under ProcMgr control: [\'Pmbus\']
+Dec  2 14:58:41 BHP-Arista-Core1 ProcMgr-worker: %PROCMGR-7-PROCESSES_ADOPTED: ProcMgr (PID=2370) adopted running processes:  (SuperServer, PID=2945) (Scd, PID=3203) (Ira, PID=2948) (StageMgr, PID=2568) (ConfigAgent, PID=2569) (Fru, PID=2571) (Launcher, PID=2573) (CapiApp, PID=2958) (Max6697, PID=3215) (StpTxRx, PID=2962) (Max6658, PID=3139) (StandbyCpld, PID=2965) (SandLag, PID=3734) (AgentMonitor, PID=2967) (FpgaAgent, PID=3224) (PowerFuse, PID=3076) (SandAcl, PID=3598) (KernelNetworkInfo, PID=2991) (Tunnel, PID=2972) (Ds125Br-FixedSystem, PID=3230) (Aaa, PID=2975) (StpTopology, PID=2976) (Acl, PID=2981) (Rib, PID=3240) (Sol, PID=3211) (Stp, PID=2986) (SandCounters, PID=3758) (SharedSecretProfile, PID=3119) (LedPolicy, PID=2952) (McastCommon6, PID=2994) (IgmpSnooping, PID=3124) (PowerManager, PID=3081) (LacpTxAgent, PID=3001) (SandPacketTracer, PID=3774) (Arp, PID=3007) (PhyEthtool, PID=3156) (SandMcast, PID=3777) (SandTcam, PID=3650) (EventMgr, PID=2955) (SandLanz, PID=3524) (Ucd9012, PID=3141) (KernelFib, PID=3015) (SandL3Unicast, PID=3784) (FanDetector, PID=3146) (SandFap-FixedSystem, PID=3659) (Kabini, PID=3149) (SandMact, PID=3789) (GpioLed, PID=3153) (SandTunnel, PID=3538) (SlabMonitor, PID=2516) (Sysdb, PID=2517) (Smbus, PID=3164) (ReloadCauseAgent, PID=3109) (Thermostat, PID=3041) (Chl822X, PID=3172) (L2Rib, PID=3050) (Sand, PID=3180) (Ebra, PID=3090) (TopoAgent, PID=3055) (Lldp, PID=2928) (McastCommon, PID=2931) (SandTopo, PID=3572) (PortSec, PID=2934) (PowerSupplyDetector, PID=3191) (Qos, PID=3028) (Bfd, PID=2938) (PciBus, PID=3196) (Lag, PID=2941) (XcvrAgent, PID=3199)
+Dec  2 14:58:41 BHP-Arista-Core1 ProcMgr-worker: %PROCMGR-7-WORKER_WARMSTART_DONE: ProcMgr worker warm start done. (PID=2370)
+Dec  2 14:58:41 BHP-Arista-Core1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: \'Pmbus\' starting with PID=3812 (PPID=2370) -- execing \'/usr/bin/Pmbus\'
+Dec  2 14:58:43 BHP-Arista-Core1 Pmbus: %AGENT-6-INITIALIZED: Agent \'Pmbus\' initialized; pid=3814
+Dec  2 14:58:43 BHP-Arista-Core1 SandCounters: %AGENT-6-INITIALIZED: Agent \'SandCounters\' initialized; pid=3764
+Dec  2 14:58:43 BHP-Arista-Core1 SandAcl: %AGENT-6-INITIALIZED: Agent \'SandAcl\' initialized; pid=3619
+Dec  2 14:58:44 BHP-Arista-Core1 SandMact: %AGENT-6-INITIALIZED: Agent \'SandMact\' initialized; pid=3791
+Dec  2 14:58:45 BHP-Arista-Core1 SandMcast: %AGENT-6-INITIALIZED: Agent \'SandMcast\' initialized; pid=3779
+Dec  2 14:58:47 BHP-Arista-Core1 SandL3Unicast: %AGENT-6-INITIALIZED: Agent \'SandL3Unicast\' initialized; pid=3788
+Dec  2 14:59:07 BHP-Arista-Core1 SandFap: %AGENT-6-INITIALIZED: Agent \'SandFap-FixedSystem\' initialized; pid=3667
+Dec  2 14:59:09 BHP-Arista-Core1 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Dec  2 14:59:31 BHP-Arista-Core1 SuperServer: %SYS-5-CLI_SCHEDULER_ENABLED: CliScheduler is enabled, continuing its execution of scheduled CLI jobs.
+Dec  2 15:00:31 BHP-Arista-Core1 SandFap: %SAND-6-INIT_SUCCEEDED: Initialization of FixedSystem switch asics succeeded.
+Dec  2 15:00:34 BHP-Arista-Core1 SuperServer: %SYS-5-SYSTEM_RESTARTED: System restarted
+Dec  2 15:00:34 BHP-Arista-Core1 SuperServer: %SYS-6-SYSTEM_INFO: Software image version: 4.23.4.3M
+Dec  2 15:00:34 BHP-Arista-Core1 SuperServer: %SYS-6-SYSTEM_INFO: Model: DCS-7280SE-64-R
+Dec  2 15:00:34 BHP-Arista-Core1 SuperServer: %SYS-6-SYSTEM_INFO: Serial number: JPE17142426
+Dec  2 15:00:36 BHP-Arista-Core1 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 7446.a05b.6440 and portId "49" added on interface Ethernet2
+Dec  2 15:00:43 BHP-Arista-Core1 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet2, changed state to up
+Dec  2 15:00:43 BHP-Arista-Core1 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Dec  2 15:00:43 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet2 has been added to instance MST0
+Dec  2 15:00:45 BHP-Arista-Core1 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 7446.a05b.6440 and portId "49" added on interface Ethernet2
+Dec  2 15:01:03 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet2 instance MST0 moving from discarding to learning
+Dec  2 15:01:03 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet2 instance MST0 moving from learning to forwarding
+Dec  2 15:01:33 BHP-Arista-Core1 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+'
+
+Raw logs output:
+'Syslog logging: enabled
+    Buffer logging: level debugging
+    Console logging: level errors
+    Persistent logging: disabled
+    Monitor logging: level errors
+    Synchronous logging: disabled
+    Trap logging: level informational
+    Sequence numbers: disabled
+    Syslog facility: local4
+    Hostname format: Hostname only
+    Repeat logging interval: disabled
+    Repeat messages: disabled
+
+Facility                   Severity            Effective Severity
+--------------------       -------------       ------------------
+aaa                        debugging           debugging    
+accounting                 debugging           debugging    
+acl                        debugging           debugging    
+agent                      debugging           debugging    
+ale                        debugging           debugging    
+arp                        debugging           debugging    
+bfd                        debugging           debugging    
+bgp                        debugging           debugging    
+bmp                        debugging           debugging    
+capacity                   debugging           debugging    
+capi                       debugging           debugging    
+card                       debugging           debugging    
+clear                      debugging           debugging    
+cvx                        debugging           debugging    
+dataplane                  debugging           debugging    
+dhcp                       debugging           debugging    
+dot1x                      debugging           debugging    
+dscp                       debugging           debugging    
+envmon                     debugging           debugging    
+eth                        debugging           debugging    
+eventmon                   debugging           debugging    
+extension                  debugging           debugging    
+fhrp                       debugging           debugging    
+flow                       debugging           debugging    
+forwarding                 debugging           debugging    
+fru                        debugging           debugging    
+fwk                        debugging           debugging    
+gmp                        debugging           debugging    
+hardware                   debugging           debugging    
+health                     debugging           debugging    
+httpservice                debugging           debugging    
+igmp                       debugging           debugging    
+igmpsnooping               debugging           debugging    
+int                        debugging           debugging    
+intf                       debugging           debugging    
+ip6routing                 debugging           debugging    
+iprib                      debugging           debugging    
+ira                        debugging           debugging    
+isis                       debugging           debugging    
+kernelfib                  debugging           debugging    
+lacp                       debugging           debugging    
+lag                        debugging           debugging    
+launcher                   debugging           debugging    
+ldp                        debugging           debugging    
+license                    debugging           debugging    
+lineproto                  debugging           debugging    
+lldp                       debugging           debugging    
+loadbalancer               debugging           debugging    
+logmgr                     debugging           debugging    
+loopback                   debugging           debugging    
+loopprotect                debugging           debugging    
+mapreducemonitor           debugging           debugging    
+max24305                   debugging           debugging    
+mcs                        debugging           debugging    
+mirroring                  debugging           debugging    
+mka                        debugging           debugging    
+mlag                       debugging           debugging    
+mldsnooping                debugging           debugging    
+mmode                      debugging           debugging    
+mroute                     debugging           debugging    
+mrp                        debugging           debugging    
+msdp                       debugging           debugging    
+msrp                       debugging           debugging    
+msspolicymonitor           debugging           debugging    
+mvrp                       debugging           debugging    
+nat                        debugging           debugging    
+openconfig                 debugging           debugging    
+openflow                   debugging           debugging    
+ospf                       debugging           debugging    
+ospf3                      debugging           debugging    
+package                    debugging           debugging    
+pfc                        debugging           debugging    
+pimbsr                     debugging           debugging    
+portsecurity               debugging           debugging    
+ptp                        debugging           debugging    
+pwrmgmt                    debugging           debugging    
+qos                        debugging           debugging    
+quartzy                    debugging           debugging    
+queuemonitor               debugging           debugging    
+radius                     debugging           debugging    
+redundancy                 debugging           debugging    
+rib                        debugging           debugging    
+routing                    debugging           debugging    
+sand                       debugging           debugging    
+sandacl                    debugging           debugging    
+sandhalo                   debugging           debugging    
+sandipsec                  debugging           debugging    
+sandtopo                   debugging           debugging    
+security                   debugging           debugging    
+servermonitor              debugging           debugging    
+spantree                   debugging           debugging    
+sso                        debugging           debugging    
+stagemgr                   debugging           debugging    
+sys                        debugging           debugging    
+sysdb                      debugging           debugging    
+tapagg                     debugging           debugging    
+tcp                        debugging           debugging    
+transceiver                debugging           debugging    
+tunnel                     debugging           debugging    
+tunnelintf                 debugging           debugging    
+vmtracersess               debugging           debugging    
+vmwarevi                   debugging           debugging    
+vmwarevs                   debugging           debugging    
+vrf                        debugging           debugging    
+vrrp                       debugging           debugging    
+vxlan                      debugging           debugging    
+xmpp                       debugging           debugging    
+ztp                        debugging           debugging    
+
+Log Buffer:
+Dec  2 14:58:40 BHP-Arista-Core1 Rib: %RIB-5-IGP_CONVERGED: IGP protocols in VRF default have converged and their routes are in FIB
+Dec  2 14:58:40 BHP-Arista-Core1 Rib: %RIB-5-ROUTE_READY: Routes in VRF default are ready and available in FIB
+Dec  2 14:58:40 BHP-Arista-Core1 ProcMgr-worker: %PROCMGR-6-WORKER_WARMSTART: ProcMgr worker warm start. (PID=2370)
+Dec  2 14:58:41 BHP-Arista-Core1 SandTunnel: %AGENT-6-INITIALIZED: Agent \'SandTunnel\' initialized; pid=3544
+Dec  2 14:58:41 BHP-Arista-Core1 ProcMgr-worker: %PROCMGR-7-NEW_PROCESSES: New processes configured to run under ProcMgr control: [\'Pmbus\']
+Dec  2 14:58:41 BHP-Arista-Core1 ProcMgr-worker: %PROCMGR-7-PROCESSES_ADOPTED: ProcMgr (PID=2370) adopted running processes:  (SuperServer, PID=2945) (Scd, PID=3203) (Ira, PID=2948) (StageMgr, PID=2568) (ConfigAgent, PID=2569) (Fru, PID=2571) (Launcher, PID=2573) (CapiApp, PID=2958) (Max6697, PID=3215) (StpTxRx, PID=2962) (Max6658, PID=3139) (StandbyCpld, PID=2965) (SandLag, PID=3734) (AgentMonitor, PID=2967) (FpgaAgent, PID=3224) (PowerFuse, PID=3076) (SandAcl, PID=3598) (KernelNetworkInfo, PID=2991) (Tunnel, PID=2972) (Ds125Br-FixedSystem, PID=3230) (Aaa, PID=2975) (StpTopology, PID=2976) (Acl, PID=2981) (Rib, PID=3240) (Sol, PID=3211) (Stp, PID=2986) (SandCounters, PID=3758) (SharedSecretProfile, PID=3119) (LedPolicy, PID=2952) (McastCommon6, PID=2994) (IgmpSnooping, PID=3124) (PowerManager, PID=3081) (LacpTxAgent, PID=3001) (SandPacketTracer, PID=3774) (Arp, PID=3007) (PhyEthtool, PID=3156) (SandMcast, PID=3777) (SandTcam, PID=3650) (EventMgr, PID=2955) (SandLanz, PID=3524) (Ucd9012, PID=3141) (KernelFib, PID=3015) (SandL3Unicast, PID=3784) (FanDetector, PID=3146) (SandFap-FixedSystem, PID=3659) (Kabini, PID=3149) (SandMact, PID=3789) (GpioLed, PID=3153) (SandTunnel, PID=3538) (SlabMonitor, PID=2516) (Sysdb, PID=2517) (Smbus, PID=3164) (ReloadCauseAgent, PID=3109) (Thermostat, PID=3041) (Chl822X, PID=3172) (L2Rib, PID=3050) (Sand, PID=3180) (Ebra, PID=3090) (TopoAgent, PID=3055) (Lldp, PID=2928) (McastCommon, PID=2931) (SandTopo, PID=3572) (PortSec, PID=2934) (PowerSupplyDetector, PID=3191) (Qos, PID=3028) (Bfd, PID=2938) (PciBus, PID=3196) (Lag, PID=2941) (XcvrAgent, PID=3199)
+Dec  2 14:58:41 BHP-Arista-Core1 ProcMgr-worker: %PROCMGR-7-WORKER_WARMSTART_DONE: ProcMgr worker warm start done. (PID=2370)
+Dec  2 14:58:41 BHP-Arista-Core1 ProcMgr-worker: %PROCMGR-6-PROCESS_STARTED: \'Pmbus\' starting with PID=3812 (PPID=2370) -- execing \'/usr/bin/Pmbus\'
+Dec  2 14:58:43 BHP-Arista-Core1 Pmbus: %AGENT-6-INITIALIZED: Agent \'Pmbus\' initialized; pid=3814
+Dec  2 14:58:43 BHP-Arista-Core1 SandCounters: %AGENT-6-INITIALIZED: Agent \'SandCounters\' initialized; pid=3764
+Dec  2 14:58:43 BHP-Arista-Core1 SandAcl: %AGENT-6-INITIALIZED: Agent \'SandAcl\' initialized; pid=3619
+Dec  2 14:58:44 BHP-Arista-Core1 SandMact: %AGENT-6-INITIALIZED: Agent \'SandMact\' initialized; pid=3791
+Dec  2 14:58:45 BHP-Arista-Core1 SandMcast: %AGENT-6-INITIALIZED: Agent \'SandMcast\' initialized; pid=3779
+Dec  2 14:58:47 BHP-Arista-Core1 SandL3Unicast: %AGENT-6-INITIALIZED: Agent \'SandL3Unicast\' initialized; pid=3788
+Dec  2 14:59:07 BHP-Arista-Core1 SandFap: %AGENT-6-INITIALIZED: Agent \'SandFap-FixedSystem\' initialized; pid=3667
+Dec  2 14:59:09 BHP-Arista-Core1 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Dec  2 14:59:31 BHP-Arista-Core1 SuperServer: %SYS-5-CLI_SCHEDULER_ENABLED: CliScheduler is enabled, continuing its execution of scheduled CLI jobs.
+Dec  2 15:00:31 BHP-Arista-Core1 SandFap: %SAND-6-INIT_SUCCEEDED: Initialization of FixedSystem switch asics succeeded.
+Dec  2 15:00:34 BHP-Arista-Core1 SuperServer: %SYS-5-SYSTEM_RESTARTED: System restarted
+Dec  2 15:00:34 BHP-Arista-Core1 SuperServer: %SYS-6-SYSTEM_INFO: Software image version: 4.23.4.3M
+Dec  2 15:00:34 BHP-Arista-Core1 SuperServer: %SYS-6-SYSTEM_INFO: Model: DCS-7280SE-64-R
+Dec  2 15:00:34 BHP-Arista-Core1 SuperServer: %SYS-6-SYSTEM_INFO: Serial number: JPE17142426
+Dec  2 15:00:36 BHP-Arista-Core1 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 7446.a05b.6440 and portId "49" added on interface Ethernet2
+Dec  2 15:00:43 BHP-Arista-Core1 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet2, changed state to up
+Dec  2 15:00:43 BHP-Arista-Core1 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Dec  2 15:00:43 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet2 has been added to instance MST0
+Dec  2 15:00:45 BHP-Arista-Core1 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 7446.a05b.6440 and portId "49" added on interface Ethernet2
+Dec  2 15:01:03 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet2 instance MST0 moving from discarding to learning
+Dec  2 15:01:03 BHP-Arista-Core1 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet2 instance MST0 moving from learning to forwarding
+Dec  2 15:01:33 BHP-Arista-Core1 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Dec  2 16:37:15 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_E: Enter configuration mode from console by arista_eapi on vty3 (10.10.50.149)
+Dec  2 16:39:19 BHP-Arista-Core1 ConfigAgent: %SYS-5-CONFIG_I: Configured from console by arista_eapi on vty3 (10.10.50.149)
+'
+

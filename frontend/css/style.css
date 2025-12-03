@@ -1,0 +1,225 @@
+/* Arista Switch Management Platform - Custom Styles */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.app-container {
+  min-height: 100vh;
+}
+
+.navbar-brand {
+  font-weight: 600;
+}
+
+.card {
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.card-header {
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.status-badge {
+  font-size: 0.875em;
+  padding: 0.4em 0.65em;
+  border-radius: 0.25rem;
+  font-weight: 600;
+}
+
+.status-up {
+  background-color: #d1e7dd;
+  color: #0f5132;
+}
+
+.status-down {
+  background-color: #f8d7da;
+  color: #842029;
+}
+
+.status-unknown {
+  background-color: #e2e3e5;
+  color: #41464b;
+}
+
+/* Custom Utilities */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Animations */
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+.blinking-badge {
+  animation: blink 1.5s infinite;
+}
+
+/* Port Activity Visualization */
+.port-activity {
+  padding: 0;
+}
+
+.port-legend-item {
+  font-size: 0.875rem;
+  padding: 0.375rem 0.75rem;
+}
+
+.switch-visualization {
+  background-color: #f8f9fa;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.switch-header {
+  margin-bottom: 1rem;
+}
+
+.port-grid-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: #2c3e50;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.port-row {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-start;
+}
+
+.port-cell {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-color: #34495e;
+  border: 2px solid #1a252f;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.port-cell:hover {
+  transform: scale(1.1);
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.port-cell.port-empty {
+  background-color: transparent;
+  border: none;
+  cursor: default;
+}
+
+.port-cell.port-empty:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.port-number {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #ecf0f1;
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 2px;
+}
+
+.port-status-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-top: 4px;
+  transition: all 0.3s ease;
+}
+
+/* Port Status Colors */
+.port-cell.port-up {
+  background-color: #27ae60;
+  border-color: #229954;
+}
+
+.port-cell.port-up .port-status-indicator {
+  background-color: #2ecc71;
+  box-shadow: 0 0 8px rgba(46, 204, 113, 0.6);
+  animation: pulse 2s infinite;
+}
+
+.port-cell.port-down {
+  background-color: #7f8c8d;
+  border-color: #5d6d7e;
+}
+
+.port-cell.port-down .port-status-indicator {
+  background-color: #95a5a6;
+}
+
+.port-cell.port-disabled {
+  background-color: #2c2c2c;
+  border-color: #1a1a1a;
+}
+
+.port-cell.port-disabled .port-status-indicator {
+  background-color: #404040;
+}
+
+.port-cell.port-disabled .port-number {
+  color: #7f8c8d;
+}
+
+.port-cell.port-unknown {
+  background-color: #f39c12;
+  border-color: #e67e22;
+}
+
+.port-cell.port-unknown .port-status-indicator {
+  background-color: #f1c40f;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 8px rgba(46, 204, 113, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 16px rgba(46, 204, 113, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 8px rgba(46, 204, 113, 0.6);
+  }
+}
+
+/* Port Statistics */
+.stat-box {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
