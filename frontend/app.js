@@ -124,6 +124,10 @@ createApp({
       this.currentView = 'edit-switch';
     },
 
+    openDiagnosticTool() {
+      window.open('/arista/diagnostic.php', '_blank');
+    },
+
   },
   template: `
     <div class="app-container">
@@ -179,6 +183,13 @@ createApp({
                 @click="currentView = 'help'"
               >
                 <i class="fas fa-question-circle me-1"></i> Help
+              </button>
+              <button
+                class="nav-link text-white"
+                @click="openDiagnosticTool"
+                title="Open eAPI diagnostic tool"
+              >
+                <i class="fas fa-stethoscope me-1"></i> Diagnostic
               </button>
             </div>
             <div class="navbar-nav ms-auto d-flex flex-row align-items-center">

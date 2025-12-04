@@ -85,3 +85,7 @@ Exemption/VLAN_CREATE_FIX.md
 Exemption/VLAN_CREATION_ISSUE_RESOLVED.md
 Exemption/WHAT_DATA_IS_SENT.md
 Exemption/WORK_LIST.md
+help/copy_screenshots.bat
+help/copy_screenshots.py
+help/copy_screenshots_final.py
+help/screenshots/VERIFICATION.md

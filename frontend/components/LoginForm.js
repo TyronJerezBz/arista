@@ -70,60 +70,92 @@ export default {
     }
   },
   template: `
-    <div class="login-container">
-      <div class="card login-card">
-        <div class="card-header">
-          <h4 class="mb-0">
-            <i class="fas fa-network-wired me-2"></i>
-            Arista Switch Manager
-          </h4>
+    <div class="modern-login-wrapper">
+      <div class="modern-login-background">
+        <div class="bg-shape bg-shape-1"></div>
+        <div class="bg-shape bg-shape-2"></div>
+        <div class="bg-shape bg-shape-3"></div>
+      </div>
+      
+      <div class="modern-login-container">
+        <div class="modern-login-card">
+          <div class="modern-login-header">
+            <div class="modern-logo-wrapper">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <h1 class="modern-login-title">Arista Switch Manager</h1>
+            <p class="modern-login-subtitle">Sign in to access your network management platform</p>
         </div>
-        <div class="card-body">
-          <form @submit.prevent="handleLogin">
-            <div v-if="error" class="alert alert-danger" role="alert">
-              <i class="fas fa-exclamation-circle me-2"></i>
-              {{ error }}
+          
+          <form @submit.prevent="handleLogin" class="modern-login-form">
+            <div v-if="error" class="modern-error-alert">
+              <i class="fas fa-exclamation-triangle"></i>
+              <span>{{ error }}</span>
             </div>
             
-            <div class="mb-3">
-              <label for="username" class="form-label">Username</label>
+            <div class="modern-form-group">
+              <label for="username" class="modern-form-label">
+                <i class="fas fa-user"></i>
+                Username
+              </label>
+              <div class="modern-input-group">
+                <i class="fas fa-user modern-input-icon"></i>
               <input
                 type="text"
-                class="form-control"
+                  class="modern-input"
                 id="username"
                 v-model="username"
-                placeholder="Enter username"
+                  placeholder="Enter your username"
                 required
                 autofocus
                 :disabled="loading"
                 @keypress="handleKeyPress"
               />
+              </div>
             </div>
             
-            <div class="mb-3">
-              <label for="password" class="form-label">Password</label>
+            <div class="modern-form-group">
+              <label for="password" class="modern-form-label">
+                <i class="fas fa-lock"></i>
+                Password
+              </label>
+              <div class="modern-input-group">
+                <i class="fas fa-lock modern-input-icon"></i>
               <input
                 type="password"
-                class="form-control"
+                  class="modern-input"
                 id="password"
                 v-model="password"
-                placeholder="Enter password"
+                  placeholder="Enter your password"
                 required
                 :disabled="loading"
                 @keypress="handleKeyPress"
               />
+              </div>
             </div>
             
             <button
               type="submit"
-              class="btn btn-primary w-100"
+              class="modern-login-btn"
               :disabled="loading"
+              :class="{ 'is-loading': loading }"
             >
-              <span v-if="loading" class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
-              <span v-else><i class="fas fa-sign-in-alt me-2"></i></span>
-              {{ loading ? 'Logging in...' : 'Login' }}
+              <span v-if="loading" class="modern-spinner-wrapper">
+                <span class="modern-spinner"></span>
+              </span>
+              <span v-else class="modern-btn-content">
+                <i class="fas fa-sign-in-alt"></i>
+                Sign In
+              </span>
             </button>
           </form>
+          
+          <div class="modern-login-footer">
+            <div class="modern-security-badge">
+              <i class="fas fa-shield-alt"></i>
+              <span>Secure Authentication</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -6,20 +6,44 @@ RewriteEngine On
 # Set base directory
 RewriteBase /arista/
 
-# Handle root directory - serve frontend/index.html
-# Check if the request URI matches root (with RewriteBase, this is relative)
+# Force HTTPS (skip for localhost)
+# Uncomment the following lines in production to enforce HTTPS
+# RewriteCond %{HTTPS} off
+# RewriteCond %{HTTP_HOST} !^localhost [NC]
+# RewriteCond %{HTTP_HOST} !^127\.0\.0\.1 [NC]
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Force HTTPS for production (alternative method - uncomment for production)
+# RewriteCond %{HTTPS} !=on
+# RewriteCond %{SERVER_NAME} !^localhost [NC]
+# RewriteCond %{SERVER_NAME} !^127\.0\.0\.1 [NC]
+# RewriteRule ^(.*)$ https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+
+# Allow direct access to API files
+RewriteRule ^api/ - [L]
+
+# Allow direct access to frontend files
+RewriteRule ^frontend/ - [L]
+
+# Allow direct access to static files (CSS, JS, images, fonts)
+RewriteRule ^(.*\.(css|js|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot))$ - [L]
+
+# Handle root directory requests - rewrite to frontend/index.html
+# This catches requests to /arista/ or /arista
+# Internal rewrite (keeps URL as /arista/) - change [L] to [R=301,L] if you want URL redirect
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} ^/arista/?$
 RewriteRule ^$ frontend/index.html [L]
 
-# Allow access to API files
-RewriteRule ^api/ - [L]
+# Alternative: Redirect to /arista/frontend/index.html (uncomment to use redirect instead of rewrite)
+# RewriteCond %{REQUEST_URI} ^/arista/?$
+# RewriteRule ^$ /arista/frontend/index.html [R=301,L]
 
-# Allow access to frontend files
-RewriteRule ^frontend/ - [L]
-
-# Allow access to CSS, JS, and other static files
-RewriteRule ^(.*\.(css|js|png|jpg|gif|ico|svg|woff|woff2|ttf|eot))$ - [L]
+# Handle index file requests - rewrite to frontend/index.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} ^/arista/index\.(html|php)?$
+RewriteRule ^index\.(html|php)?$ frontend/index.html [L]
 
 # Set DirectoryIndex as fallback
 DirectoryIndex frontend/index.html
-
