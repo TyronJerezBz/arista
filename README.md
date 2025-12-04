@@ -151,15 +151,19 @@ Follow these five steps to get the Arista Switch Management Platform up and runn
 
 ### Step 2: Create Database and Import Schema
 
+A complete database dump file is included in the document root:
+
 1. Create a MySQL/MariaDB database:
    ```sql
    CREATE DATABASE switchdb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
    ```
 
-2. Import the database schema:
+2. Import the database:
    ```bash
-   mysql -u root -p switchdb < Exemption/add_permissions_tables.sql
+   mysql -u root -p switchdb < switchdb_clean.sql
    ```
+
+> **Note**: The `switchdb_clean.sql` file in the document root contains a complete database dump with all tables and initial data needed for the application.
 
 ### Step 3: Configure Database Connection
 
