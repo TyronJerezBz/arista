@@ -13,8 +13,6 @@ The Arista Switch Management Platform is a comprehensive web-based management sy
 
 The platform communicates with Arista switches using the eAPI (eXtensible API) protocol, allowing for programmatic control and configuration without requiring direct console access to each switch.
 
-> **Note**: Screenshots are referenced throughout this documentation. To display screenshots properly, please add screenshot images to the `help/screenshots/` directory. See the [Screenshots](#screenshots) section below for details on which screenshots are needed.
-
 ![Platform Overview](screenshots/01-dashboard.png)
 
 ## Table of Contents
@@ -269,8 +267,6 @@ After logging in, you'll see the main dashboard with:
 - Navigation menu
 - User information
 
-![Dashboard](screenshots/01-dashboard.png)
-
 ## User Guide
 
 ### Adding a Switch
@@ -329,8 +325,6 @@ After logging in, you'll see the main dashboard with:
 5. Click **"Save"** to apply changes
 6. Optionally create a backup before applying
 
-![Configuration Editor](screenshots/05-config-editor.png)
-
 ### Managing Users
 
 1. Navigate to **User Management** (Admin only)
@@ -341,8 +335,6 @@ After logging in, you'll see the main dashboard with:
    - Role (Admin, Operator, Viewer)
 4. Assign permissions to specific switches
 5. Click **"Create User"**
-
-![User Management](screenshots/07-user-management.png)
 
 ### Setting Permissions
 
@@ -376,8 +368,6 @@ After logging in, you'll see the main dashboard with:
 4. Use filters to search specific log entries
 5. Export logs if needed
 
-![Logs Viewer](screenshots/08-logs-viewer.png)
-
 ### Firmware Management
 
 1. Navigate to **Firmware Manager**
@@ -390,16 +380,9 @@ After logging in, you'll see the main dashboard with:
    - View current firmware version
    - Download firmware from switch
 
-![Firmware](screenshots/06-firmware-management.png)
-
 ## Screenshots
 
-The following screenshots demonstrate key features of the platform. To add screenshots:
-
-1. Take screenshots of your application using your preferred tool
-2. Save them with the filenames listed below
-3. Place them in the `help/screenshots/` directory
-4. The images will automatically display in this README
+The following screenshots demonstrate key features of the platform:
 
 ### Main Dashboard
 ![Dashboard](screenshots/01-dashboard.png)
@@ -456,8 +439,6 @@ The following screenshots demonstrate key features of the platform. To add scree
 ### Port Activity
 ![Port Activity](screenshots/14-port-activity.png)
 *Port activity monitoring and statistics*
-
-**Note**: If screenshots are not displaying, ensure the image files exist in the `help/screenshots/` directory with the exact filenames shown above.
 
 ## API Documentation
 
