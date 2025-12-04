@@ -19,7 +19,8 @@ The platform communicates with Arista switches using the eAPI (eXtensible API) p
 
 - [Features](#features)
 - [Requirements](#requirements)
-- [Installation](#installation)
+- [Testing & Compatibility](#testing--compatibility)
+- [Quick Setup Guide](#quick-setup-guide)
 - [Configuration](#configuration)
 - [Getting Started](#getting-started)
 - [User Guide](#user-guide)
@@ -27,6 +28,7 @@ The platform communicates with Arista switches using the eAPI (eXtensible API) p
 - [API Documentation](#api-documentation)
 - [Troubleshooting](#troubleshooting)
 - [Contributing](#contributing)
+- [Security Considerations](#security-considerations)
 - [License](#license)
 
 ## Features
@@ -207,25 +209,18 @@ chmod -R 777 firmware/  # If firmware uploads are needed
 
 ## Configuration
 
-### Database Configuration
+### Application Configuration
 
-Edit `api/config.php`:
+#### Session Configuration
 
-```php
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'switchdb');
-define('DB_USER', 'your_username');
-define('DB_PASS', 'your_password');
-```
-
-### Session Configuration
+Edit `api/config.php` to adjust session settings:
 
 ```php
 define('SESSION_LIFETIME', 3600); // Session timeout in seconds
 define('SESSION_COOKIE_SECURE', false); // Set to true for HTTPS
 ```
 
-### Security Configuration
+#### Security Configuration
 
 ```php
 define('CSRF_TOKEN_LIFETIME', 3600);
@@ -233,17 +228,178 @@ define('MAX_LOGIN_ATTEMPTS', 5);
 define('LOGIN_LOCKOUT_TIME', 900); // 15 minutes
 ```
 
-### Switch eAPI Configuration
+### Configuring Arista Switches for eAPI
 
-Ensure your Arista switches have eAPI enabled:
+Before you can add switches to the platform, you must configure them to enable eAPI (eXtensible API). The eAPI allows the platform to communicate with your switches programmatically.
+
+#### Prerequisites
+
+- Console or SSH access to your Arista switch
+- Administrative privileges on the switch
+- Network connectivity between the web server and switch management IP
+
+#### Step-by-Step eAPI Configuration
+
+1. **Connect to the switch console or via SSH**
+
+2. **Enter privileged mode:**
+   ```bash
+   switch> enable
+   switch#
+   ```
+
+3. **Enter configuration mode:**
+   ```bash
+   switch# configure terminal
+   switch(config)#
+   ```
+
+4. **Enable the management API:**
+   ```bash
+   switch(config)# management api http-commands
+   switch(config-mgmt-api-http)#
+   ```
+
+5. **Configure the protocol (HTTP or HTTPS):**
+   
+   **For HTTP (port 80):**
+   ```bash
+   switch(config-mgmt-api-http)# protocol http
+   ```
+   
+   **For HTTPS (port 443) - Recommended for production:**
+   ```bash
+   switch(config-mgmt-api-http)# protocol https
+   ```
+
+6. **Enable the API:**
+   ```bash
+   switch(config-mgmt-api-http)# no shutdown
+   ```
+
+7. **Save the configuration:**
+   ```bash
+   switch(config-mgmt-api-http)# write memory
+   ```
+
+8. **Verify eAPI is enabled:**
+   ```bash
+   switch# show management api http-commands
+   ```
+   
+   You should see output indicating the API is enabled and running.
+
+#### User Permissions Required for eAPI
+
+For eAPI to function properly with the platform, the user account used for eAPI authentication must have **privilege level 15** (full administrative access). This is required because the platform needs to execute configuration commands such as creating VLANs, modifying interfaces, and updating switch configurations.
+
+**Create a user with privilege level 15:**
 
 ```bash
-switch> enable
-switch# configure terminal
-switch(config)# management api http-commands
-switch(config-mgmt-api-http)# protocol http
-switch(config-mgmt-api-http)# no shutdown
+switch(config)# username admin privilege 15 secret your_password
+switch(config)# exit
+switch# write memory
 ```
+
+**Verify the user has correct privileges:**
+```bash
+switch# show users
+```
+
+You should see your user account listed with privilege level 15.
+
+> **Important**: Replace `admin` with your desired username and `your_password` with a strong password. The `secret` keyword stores the password using a secure hash. Privilege level 15 is required for full CLI access and configuration commands.
+
+#### Configure AAA Authorization for eAPI
+
+By default, eAPI users have limited permissions and cannot enter configuration mode or execute administrative commands. To allow the platform to perform configuration operations (such as creating VLANs, modifying interfaces, etc.), you must configure AAA (Authentication, Authorization, and Accounting) authorization on the switch.
+
+**Why is this needed?**
+
+Without AAA authorization configured, eAPI users will be able to authenticate and run read-only commands (like `show` commands), but they will not be able to execute configuration commands. The platform requires the ability to modify switch configurations, so AAA authorization is essential.
+
+**Configure AAA Authorization:**
+
+1. **Enter configuration mode:**
+   ```bash
+   switch# configure terminal
+   switch(config)#
+   ```
+
+2. **Configure AAA authorization for exec sessions:**
+   ```bash
+   switch(config)# aaa authorization exec default local
+   ```
+   This command tells the switch to use local authentication for login/exec sessions.
+
+3. **Configure AAA authorization for command execution:**
+   ```bash
+   switch(config)# aaa authorization commands all default local
+   ```
+   This command tells the switch to use local authentication for all command execution, allowing the eAPI user to run configuration commands based on their privilege level.
+
+4. **Ensure your eAPI user has privilege level 15:**
+   ```bash
+   switch(config)# username admin privilege 15
+   ```
+   (If you already created the user in the previous step, this command ensures it has the correct privilege level)
+
+5. **Save the configuration:**
+   ```bash
+   switch(config)# exit
+   switch# write memory
+   ```
+
+**Verify AAA Authorization Configuration:**
+
+```bash
+switch# show aaa authorization
+switch# show users
+```
+
+You should see:
+- Authorization method lists configured for "exec" and "commands" using "local"
+- Your eAPI user account with privilege level 15
+
+**What this enables:**
+
+Once AAA authorization is configured, your eAPI user will be able to:
+- Execute configuration commands (create/modify VLANs, interfaces, etc.)
+- Enter configuration mode via eAPI
+- Perform all administrative operations required by the platform
+
+> **Note**: If you experience issues with VLAN creation or other configuration operations after setting up eAPI, verify that AAA authorization is properly configured. You can use the **Diagnostic Tool** in the application to test eAPI permissions and identify any authorization issues.
+
+#### Additional eAPI Configuration Options
+
+**Restrict API access to specific IP addresses (optional but recommended):**
+```bash
+switch(config-mgmt-api-http)# ip access-group API_ACCESS in
+switch(config)# ip access-list standard API_ACCESS
+switch(config-std-acl)# permit 10.10.50.149  # Your web server IP
+switch(config-std-acl)# deny any
+```
+
+**Enable HTTPS with SSL certificate (for production):**
+```bash
+switch(config-mgmt-api-http)# protocol https
+switch(config-mgmt-api-http)# ssl profile SSL_PROFILE
+```
+
+**View current eAPI status:**
+```bash
+switch# show management api http-commands
+```
+
+#### Testing eAPI Connectivity
+
+After configuring eAPI, you can test connectivity using the **Diagnostic Tool** in the application (see [Diagnostic Tool](#diagnostic-tool) section below) or manually test with curl:
+
+```bash
+curl -k https://switch-ip-address/command-api -u username:password -d '{"jsonrpc": "2.0", "method": "runCmds", "params": {"version": 1, "cmds": ["show version"]}, "id": 1}'
+```
+
+> **Note**: For detailed step-by-step instructions on configuring switches, including factory reset, setting IP addresses, and configuring passwords, see the **Help** section within the application (accessible from the main navigation menu).
 
 ## Getting Started
 
@@ -266,6 +422,46 @@ After logging in, you'll see the main dashboard with:
 - Quick action buttons
 - Navigation menu
 - User information
+
+### Built-in Help and Diagnostic Tools
+
+The application includes two built-in tools to assist with setup and troubleshooting:
+
+#### Help Section
+
+The **Help** section (accessible from the main navigation menu) provides step-by-step guides for:
+
+- **Factory Reset Switch**: Instructions for resetting a switch to factory defaults
+- **Set IP Address**: How to configure the management IP address on a switch
+- **Set Admin Password**: Steps to change the switch administrator password
+- **Enable & Configure eAPI**: Detailed instructions for enabling eAPI on Arista switches
+- **Configure AAA Authorization**: Guide for setting up authentication, authorization, and accounting
+
+These guides are especially useful when setting up new switches or troubleshooting connectivity issues.
+
+#### Diagnostic Tool
+
+The **Diagnostic** tool (accessible from the main navigation menu) is an interactive eAPI diagnostic utility that helps you:
+
+- **Test Switch Connectivity**: Verify network connectivity to your switches
+- **Test eAPI Functionality**: Check if eAPI is properly configured and responding
+- **Run Individual Tests**: Select specific diagnostic tests to run
+- **Override Credentials**: Test with different credentials without modifying switch settings
+- **View Detailed Results**: See real-time test execution and detailed error messages
+
+**Using the Diagnostic Tool:**
+
+1. Click the **Diagnostic** button in the main navigation
+2. Select a switch from the dropdown (or use custom credentials)
+3. Choose which tests to run (or run all tests)
+4. Click **Run Tests** to execute diagnostics
+5. Review the results to identify any connectivity or configuration issues
+
+The diagnostic tool is particularly useful when:
+- Adding a new switch and verifying connectivity
+- Troubleshooting why a switch appears offline
+- Testing eAPI configuration changes
+- Verifying credentials before adding a switch
 
 ## User Guide
 
@@ -649,10 +845,11 @@ Enable debug logging by checking browser console (F12) for detailed error messag
 
 ### Getting Help
 
-1. Check the **Help** section in the application
-2. Review error logs in the Logs Viewer
-3. Check browser console for JavaScript errors
-4. Review Apache error logs
+1. **Use the Built-in Help Section**: The application includes a comprehensive Help section accessible from the main navigation menu with step-by-step guides for switch configuration
+2. **Use the Diagnostic Tool**: The Diagnostic tool can help identify connectivity and eAPI configuration issues
+3. Review error logs in the Logs Viewer
+4. Check browser console for JavaScript errors (F12)
+5. Review Apache error logs
 
 ## Contributing
 
