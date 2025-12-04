@@ -437,7 +437,7 @@ The **Help** section (accessible from the main navigation menu) provides step-by
 
 - **Factory Reset Switch**: Instructions for resetting a switch to factory defaults
 - **Set IP Address**: How to configure the management IP address on a switch
-- **Set Admin Password**: Steps to change the switch administrator password
+- **Set Admin Password**: Steps to change the switch administrator password.
 - **Enable & Configure eAPI**: Detailed instructions for enabling eAPI on Arista switches
 - **Configure AAA Authorization**: Guide for setting up authentication, authorization, and accounting
 
