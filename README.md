@@ -13,7 +13,7 @@ The Arista Switch Management Platform is a comprehensive web-based management sy
 
 The platform communicates with Arista switches using the eAPI (eXtensible API) protocol, allowing for programmatic control and configuration without requiring direct console access to each switch.
 
-![Platform Overview](screenshots/01-dashboard.png)
+![Platform Overview](help/screenshots/01-dashboard.png)
 
 ## Table of Contents
 
@@ -39,7 +39,7 @@ The platform communicates with Arista switches using the eAPI (eXtensible API) p
 - **Switch Details**: Comprehensive view of switch information, status, and statistics
 - **Bulk Operations**: Perform operations on multiple switches simultaneously
 
-![Switch Management](screenshots/02-switch-list.png)
+![Switch Management](help/screenshots/02-switch-list.png)
 
 ### 🌐 VLAN Management
 - **VLAN Creation & Configuration**: Create and manage VLANs across switches
@@ -47,7 +47,7 @@ The platform communicates with Arista switches using the eAPI (eXtensible API) p
 - **Trunk Configuration**: Configure trunk ports with multiple VLANs
 - **Access Port Configuration**: Set up access ports with single VLAN assignment
 
-![VLAN Management](screenshots/03-vlan-management.png)
+![VLAN Management](help/screenshots/03-vlan-management.png)
 
 ### 🔧 Interface Management
 - **Interface Configuration**: Configure individual switch interfaces
@@ -55,7 +55,7 @@ The platform communicates with Arista switches using the eAPI (eXtensible API) p
 - **Port Channel Management**: Create and manage port channels (LAG)
 - **Transceiver Information**: View SFP/SFP+ transceiver details
 
-![Interface Management](screenshots/04-interface-management.png)
+![Interface Management](help/screenshots/04-interface-management.png)
 
 ### 📝 Configuration Management
 - **Configuration Editor**: Edit switch configurations with syntax highlighting
@@ -64,14 +64,14 @@ The platform communicates with Arista switches using the eAPI (eXtensible API) p
 - **Configuration Diff**: Compare current vs. backup configurations
 - **Configuration Sync**: Synchronize configurations across switches
 
-![Configuration Management](screenshots/05-config-editor.png)
+![Configuration Management](help/screenshots/05-config-editor.png)
 
 ### 🔄 Firmware Management
 - **Firmware Upload**: Upload new firmware files to switches
 - **Firmware Download**: Download firmware from switches
 - **Firmware Version Tracking**: Track firmware versions across switches
 
-![Firmware Management](screenshots/06-firmware-management.png)
+![Firmware Management](help/screenshots/06-firmware-management.png)
 
 ### 👥 User & Permission Management
 - **User Management**: Create, edit, and delete user accounts
@@ -79,7 +79,7 @@ The platform communicates with Arista switches using the eAPI (eXtensible API) p
 - **Permission System**: Granular permission management per switch
 - **Audit Logging**: Track all user actions and changes
 
-![User Management](screenshots/07-user-management.png)
+![User Management](help/screenshots/07-user-management.png)
 
 ### 📊 Monitoring & Logs
 - **Real-time Logs**: View switch logs in real-time
@@ -87,7 +87,7 @@ The platform communicates with Arista switches using the eAPI (eXtensible API) p
 - **Port Activity**: Monitor port activity and statistics
 - **Alert System**: Receive alerts for switch issues
 
-![Monitoring](screenshots/08-logs-viewer.png)
+![Monitoring](help/screenshots/08-logs-viewer.png)
 
 ### ⚙️ Advanced Features
 - **Time Settings**: Configure NTP and time synchronization
@@ -413,7 +413,7 @@ curl -k https://switch-ip-address/command-api -u username:password -d '{"jsonrpc
 
 > **Important**: After your first login, immediately change the default password through the User Management interface for security.
 
-![Login Page](screenshots/09-login.png)
+![Login Page](help/screenshots/09-login.png)
 
 ### Dashboard Overview
 
@@ -476,7 +476,7 @@ The diagnostic tool is particularly useful when:
    - **Description**: Optional description
 3. Click **"Add Switch"** to save
 
-![Add Switch](screenshots/10-add-switch.png)
+![Add Switch](help/screenshots/10-add-switch.png)
 
 ### Viewing Switch Details
 
@@ -489,7 +489,7 @@ The diagnostic tool is particularly useful when:
    - Logs
    - MAC address table
 
-![Switch Details](screenshots/11-switch-details.png)
+![Switch Details](help/screenshots/11-switch-details.png)
 
 ### Managing VLANs
 
@@ -510,7 +510,7 @@ The diagnostic tool is particularly useful when:
 4. Select VLANs to allow on the trunk
 5. Save configuration
 
-![VLAN Configuration](screenshots/12-vlan-config.png)
+![VLAN Configuration](help/screenshots/12-vlan-config.png)
 
 ### Editing Switch Configuration
 
@@ -542,7 +542,7 @@ The diagnostic tool is particularly useful when:
    - **Delete**: Can delete switches
 4. Permissions can be set per switch
 
-![Permissions](screenshots/13-permissions.png)
+![Permissions](help/screenshots/13-permissions.png)
 
 ### Monitoring Port Activity
 
@@ -554,7 +554,7 @@ The diagnostic tool is particularly useful when:
    - Error counters
    - Utilization graphs
 
-![Port Activity](screenshots/14-port-activity.png)
+![Port Activity](help/screenshots/14-port-activity.png)
 
 ### Viewing Logs
 
@@ -581,59 +581,59 @@ The diagnostic tool is particularly useful when:
 The following screenshots demonstrate key features of the platform:
 
 ### Main Dashboard
-![Dashboard](screenshots/01-dashboard.png)
+![Dashboard](help/screenshots/01-dashboard.png)
 *Main dashboard showing switch list and status*
 
 ### Switch List
-![Switch List](screenshots/02-switch-list.png)
+![Switch List](help/screenshots/02-switch-list.png)
 *List of all managed switches with status indicators*
 
 ### VLAN Management
-![VLAN Management](screenshots/03-vlan-management.png)
+![VLAN Management](help/screenshots/03-vlan-management.png)
 *VLAN configuration interface*
 
 ### Interface Management
-![Interface Management](screenshots/04-interface-management.png)
+![Interface Management](help/screenshots/04-interface-management.png)
 *Interface configuration and status*
 
 ### Configuration Editor
-![Configuration Editor](screenshots/05-config-editor.png)
+![Configuration Editor](help/screenshots/05-config-editor.png)
 *Switch configuration editor with syntax highlighting*
 
 ### Firmware Management
-![Firmware Management](screenshots/06-firmware-management.png)
+![Firmware Management](help/screenshots/06-firmware-management.png)
 *Firmware upload and management interface*
 
 ### User Management
-![User Management](screenshots/07-user-management.png)
+![User Management](help/screenshots/07-user-management.png)
 *User account management interface*
 
 ### Logs Viewer
-![Logs Viewer](screenshots/08-logs-viewer.png)
+![Logs Viewer](help/screenshots/08-logs-viewer.png)
 *Real-time log viewing interface*
 
 ### Login Page
-![Login Page](screenshots/09-login.png)
+![Login Page](help/screenshots/09-login.png)
 *User login interface*
 
 ### Add Switch Form
-![Add Switch](screenshots/10-add-switch.png)
+![Add Switch](help/screenshots/10-add-switch.png)
 *Form for adding new switches*
 
 ### Switch Details
-![Switch Details](screenshots/11-switch-details.png)
+![Switch Details](help/screenshots/11-switch-details.png)
 *Detailed switch information view*
 
 ### VLAN Configuration
-![VLAN Configuration](screenshots/12-vlan-config.png)
+![VLAN Configuration](help/screenshots/12-vlan-config.png)
 *VLAN creation and configuration*
 
 ### Permission Management
-![Permissions](screenshots/13-permissions.png)
+![Permissions](help/screenshots/13-permissions.png)
 *User permission management interface*
 
 ### Port Activity
-![Port Activity](screenshots/14-port-activity.png)
+![Port Activity](help/screenshots/14-port-activity.png)
 *Port activity monitoring and statistics*
 
 ## API Documentation
